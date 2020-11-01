@@ -8,8 +8,6 @@ Steps to run this project:
 2. Setup database settings inside `ormconfig.json` file
 3. Run `yarn start` command
 
-
-
 # How migrations works
 
 If typescript and tsnode not installed
@@ -40,6 +38,7 @@ ts-node ./node_modules/typeorm/cli.js migration:generate -n [migrationName]
 ```
 
 For simplicity you can create srcipts with yarn/npm in packaqe.json
+
 ```json
 "scripts": {
       "createMig": "typeorm migration:create -n [migrationName]",
@@ -48,13 +47,14 @@ For simplicity you can create srcipts with yarn/npm in packaqe.json
       "generate": "ts-node ./node_modules/typeorm/cli.js migration:generate -n"
    }
 ```
-Then you can do `yarn migrate
 
+Then you can do `yarn migrate
 
 # ISSUES
 
-If typescript auto import doesnt run correctly with vscode install the extension "JavaScript and TypeScript Nightly" [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
-- Make sure you have Use VS Code's version selected
-
 Verify you have ts-node and typescript installed `npm install -g typescript ts-node`
 For windows users for migrations use the path `"ts-node ./node_modules/typeorm/cli.js migration:run"`
+
+If typescript auto import doesnt run correctly with vscode install the extension "JavaScript and TypeScript Nightly" [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
+
+- Make sure you have Use VS Code's version selected
